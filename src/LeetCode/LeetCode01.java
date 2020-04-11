@@ -1,5 +1,7 @@
 package LeetCode;
 // https://leetcode.com/problems/two-sum/
+// Jose Luiz Mattos Gomes
+
 
 import java.util.Arrays;
 import java.util.HashMap;

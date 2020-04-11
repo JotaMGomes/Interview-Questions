@@ -1,5 +1,6 @@
 package LeetCode;
 // https://leetcode.com/problems/reverse-string/
+// Jose Luiz Mattos Gomes
 
 public class LeetCode02 {
 

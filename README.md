@@ -9,3 +9,5 @@ My solutions for some interview questions.
 **04** [Maximum-depth-of-binary-tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)<br>
 **05** [Fizz-buzz](https://leetcode.com/problems/fizz-buzz/)<br>
 **06** [Reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/)<br>
+**07** [Reverse-integer](https://leetcode.com/problems/reverse-integer/)<br>
+**08** [Roman-to-integer](https://leetcode.com/problems/roman-to-integer/)<br>
