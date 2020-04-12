@@ -11,3 +11,5 @@ My solutions for some interview questions.
 **06** [Reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/)<br>
 **07** [Reverse-integer](https://leetcode.com/problems/reverse-integer/)<br>
 **08** [Roman-to-integer](https://leetcode.com/problems/roman-to-integer/)<br>
+**09** [Count-primes](https://leetcode.com/problems/count-primes/)<br>
+**10** [MySqrt](https://leetcode.com/problems/sqrtx/)<br>
