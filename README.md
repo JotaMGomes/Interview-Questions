@@ -1,5 +1,6 @@
 # Interview-Questions
-My solutions for some interview questions.
+My solutions for some interview questions.<br>
+Obs.: When more then one solution: My first attempt and after some research.
 
 ## LeetCode
 
@@ -14,3 +15,6 @@ My solutions for some interview questions.
 **09** [Count-primes](https://leetcode.com/problems/count-primes/)<br>
 **10** [MySqrt](https://leetcode.com/problems/sqrtx/)<br>
 **11** [Rotate-array](https://leetcode.com/problsems/rotate-array/)<br>
+**12** [Implement-strstr](https://leetcode.com/problems/implement-strstr/)<br>
+**13** [Valid-palindrome](https://leetcode.com/problems/valid-palindrome/)<br>
+**14** [Valid-parentheses](https://leetcode.com/problems/valid-parentheses/)<br>
