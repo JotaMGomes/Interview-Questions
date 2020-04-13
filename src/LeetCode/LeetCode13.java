@@ -5,13 +5,13 @@ package LeetCode;
 public class LeetCode13 {
 
 	public static void main(String[] args) {
-		Solution15 vSolution = new Solution15();
+		Solution13 vSolution = new Solution13();
 		System.out.println(vSolution.isPalindrome("A man, a plan, a canal: Panama"));
 		System.out.println(vSolution.isPalindrome("race a car"));
 		System.out.println(vSolution.isPalindrome("0P0"));
 		System.out.println(vSolution.isPalindrome("0P"));
 		
-		Solution15b vSolutionb = new Solution15b();
+		Solution13b vSolutionb = new Solution13b();
 		System.out.println(vSolutionb.isPalindrome("A man, a plan, a canal: Panama"));
 		System.out.println(vSolutionb.isPalindrome("race a car"));
 		System.out.println(vSolutionb.isPalindrome("0P0"));
@@ -20,7 +20,7 @@ public class LeetCode13 {
 
 }
 
-class Solution15 {
+class Solution13 {
     public boolean isPalindrome(String s) {
      
     	// create string with valid chars
@@ -49,7 +49,7 @@ class Solution15 {
 }
 
 
-class Solution15b {
+class Solution13b {
     public boolean isPalindrome(String s) {
      
     	if(s != null && s.length() > 1){
