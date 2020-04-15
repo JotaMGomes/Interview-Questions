@@ -11,6 +11,11 @@ public class Careercup02 {
 
 		Tree vTree = new Tree(1);
 		
+//		        1
+//		      2   3
+//		   4    5    6
+//		 7    8    9   10		
+		
 		Tree vAux = new Tree(2);
 		vTree.left= vAux;
 
@@ -74,7 +79,7 @@ public class Careercup02 {
 
 }
 
-
+// define tree
 class Tree{
 	int value;
 	double volume;
@@ -89,20 +94,32 @@ class Tree{
 
 class Solution02 {
 	
+	// array to help print the tree
 	public static ArrayList<Integer> printControl;
 	
+	// recursive method to calculate the volume
 	public void distributeVolume(double totalVolume, Tree vTree){
 		if (vTree == null)
+			// exit if node is null
 			return;
+		
+		// put volume 
 		vTree.volume += totalVolume;
+		
+		// calculate the surplus
 		double surplus = vTree.volume-vTree.capacity;
 		if (surplus > 0) {
+			
+			// store only capacity
 			vTree.volume = vTree.capacity;
+			
+			// distribute half of the surplus to each child node
 			distributeVolume(surplus/2, vTree.left);
 			distributeVolume(surplus/2, vTree.right);
 		}
 	}
 	
+	// print the tree
 	public void printTree(Tree vTree) {
 		if (vTree == null || printControl.contains(vTree.value))
 			return;
