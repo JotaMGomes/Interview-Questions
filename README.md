@@ -19,3 +19,8 @@ Obs.: When more then one solution: My first attempt and after some research.
 **13** [Valid-palindrome](src/LeetCode/LeetCode13.java)<br>
 **14** [Valid-parentheses](src/LeetCode/LeetCode14.java)<br>
 **15** [Best-time-to-buy-and-sell-stock](src/LeetCode/LeetCode15.java)<br>
+
+
+## [Careercup](https://www.careercup.com/page?pid=amazon-interview-questions&job=sde1-interview-questions&sort=votes)
+**01** [Count-elements](src/Careercup/Careercup01.java)<br>
+**02** [Count-elements](src/Careercup/Careercup02.java)<br>

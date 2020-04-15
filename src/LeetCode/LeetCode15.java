@@ -1,5 +1,4 @@
 package LeetCode;
-
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ 
 // Jose Luiz Mattos Gomes
 
