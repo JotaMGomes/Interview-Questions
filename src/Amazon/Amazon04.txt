@@ -1,0 +1,31 @@
+Servers are represented in a 2D array. Servers need to receive a new file. 
+Servers that already have the file are represented by 1, and 0 represents a server that has yet to receive the file.
+Servers that already have the file will send the file to adjacent servers that don't have the file.
+An adjacent server is either on the left, right, above or below a given server. 
+Once a server receives a file, it will wait 1 hour before sending the file to adjacent servers.
+Given the 2D array representing the existence of a new file on each server, write an algorithm that
+will determine the minimum number of hours required to sent the file to all the available servers.
+
+Input:
+rows; an integer representing the number of rows in the grid.
+columns; an integer representing the number of columns in the grid.
+grid; an integer array representing the current status of its servers.
+
+Output:
+Return an integer representing the minimum number of hours required to send the file to all the available servers.
+Return -1 ia all the available servers cannot receive the file.
+
+Note:
+Diagonally placed cells are not considered adjacent.
+
+Example 01:
+Input:
+rows=4
+columns=5
+grid=
+[[0,1,1,0,1],
+ [0,1,0,1,0],
+ [0,0,0,0,1],
+ [0,1,0,0,0]]
+Output:
+2

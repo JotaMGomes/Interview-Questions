@@ -29,3 +29,5 @@ Obs.: When more then one solution: My first attempt and after some research.
 ## [Others]
 **01** [Eight-houses-states](src/Amazon/Amazon01.java)<br>
 **02** [Greatest-common-divisor](src/Amazon/Amazon02.java)<br>
+**03** [2D-city-cluster](src/Amazon/Amazon03.java)<br>
+**04** [2D-server-grid](src/Amazon/Amazon04.java)<br>
