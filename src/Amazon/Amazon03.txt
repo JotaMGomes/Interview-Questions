@@ -1,0 +1,26 @@
+Downtown CityA consists of city blocks, represented as grid of M*N blocks.
+Each block represents either building denoted by 1 or open land denoted by 0.
+Adjacent blocks with value of 1 are considered clusters of buildings.
+Diagonal blocks with value 1 are not considered part of the same cluster.
+Write an algorithm to find the number of different clusters in CityA.
+
+Input:
+rows;    an integer representing the number of rows in the grid.
+columns; an integer representing the number of columns in the grid.
+grid;    a two-dimensional integer array representing downtown CityA.
+
+Output:
+An integer representing the number of different clusters in CityA.
+
+Example 01:
+Input:
+rows = 5
+columns = 4
+grid = 1 1 0 0
+       0 0 1 0
+       0 0 0 0
+       1 0 1 1
+       1 1 1 1
+
+Output:
+3

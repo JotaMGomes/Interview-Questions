@@ -1,0 +1,12 @@
+Write an algorithm to determine the greatest common divisor (GCD) on N positive integers.
+
+Input:
+num; an integer representing the number of positive integers (N).
+arr; a list of positive integers.
+
+Example 1:
+Input:
+num = 5
+arr = [2,4,6,8,10]
+Output:
+2

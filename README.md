@@ -24,3 +24,8 @@ Obs.: When more then one solution: My first attempt and after some research.
 ## [Careercup](https://www.careercup.com/page?pid=amazon-interview-questions&job=sde1-interview-questions&sort=votes)
 **01** [Count-elements](src/Careercup/Careercup01.java)<br>
 **02** [Volume-distribution](src/Careercup/Careercup02.java)<br>
+
+
+## [Others]
+**01** [Eight-houses-states](src/Amazon/Amazon01.java)<br>
+**02** [Greatest-common-divisor](src/Amazon/Amazon02.java)<br>
