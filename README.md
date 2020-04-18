@@ -26,6 +26,10 @@ Obs.: When more then one solution: My first attempt and after some research.
 **02** [Volume-distribution](src/Careercup/Careercup02.java)<br>
 
 
+##[Codechef](https://www.codechef.com)
+**01** [Life,-the Universe,-and Everything](src/Codechef/Codechef01.java)<br>
+
+
 ## [Others]
 **01** [Eight-houses-states](src/Amazon/Amazon01.java)<br>
 **02** [Greatest-common-divisor](src/Amazon/Amazon02.java)<br>
