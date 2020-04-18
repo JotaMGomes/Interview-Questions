@@ -27,7 +27,7 @@ Obs.: When more then one solution: My first attempt and after some research.
 
 
 ##[Codechef](https://www.codechef.com)
-**01** [Life,-the Universe,-and Everything](src/Codechef/Codechef01.java)<br>
+**01** [Life, the Universe, and Everything](src/Codechef/Codechef01.java)<br>
 
 
 ## [Others]
