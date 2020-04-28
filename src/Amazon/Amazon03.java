@@ -42,6 +42,41 @@ public class Amazon03 {
 				);	
 		System.out.println("==========");
 		System.out.println(vSolution.findNumClusters(grid, rows, columns));
+		
+		//------------------------------------
+		System.out.println("==========");
+		System.out.println("==========");
+        Solution03_a vSolution_a = new Solution03_a();
+		
+		grid = Arrays.asList(
+				Arrays.asList(1,1,0,0),
+				Arrays.asList(0,0,1,0),
+				Arrays.asList(0,0,0,0),
+				Arrays.asList(1,0,1,1),
+				Arrays.asList(1,1,1,1)
+               );
+		System.out.println(vSolution_a.findNumClusters_a(grid, rows, columns));
+		
+	    grid = Arrays.asList(
+				Arrays.asList(0,0,0,0),
+				Arrays.asList(0,0,0,0),
+				Arrays.asList(0,0,0,0),
+				Arrays.asList(0,0,0,0),
+				Arrays.asList(0,0,0,0)
+				);	
+		System.out.println("==========");
+		System.out.println(vSolution_a.findNumClusters_a(grid, rows, columns));	
+
+
+		grid = Arrays.asList(
+				Arrays.asList(1,1,1,1),
+				Arrays.asList(1,1,1,1),
+				Arrays.asList(1,1,1,1),
+				Arrays.asList(1,1,1,1),
+				Arrays.asList(1,1,1,1)
+				);	
+		System.out.println("==========");
+		System.out.println(vSolution_a.findNumClusters_a(grid, rows, columns));
 
 	}
 
@@ -134,3 +169,78 @@ class Solution03 {
 		}
 	}	
 }
+
+class Solution03_a {
+	
+	// declare class variables
+	List<List<Integer>> vGrid;       // grid
+	int vRows, vColumns, numClust;   // number of rows, columns and number of clusters
+	
+	
+	public int findNumClusters_a(List<List<Integer>> grid, int rows, int columns) {
+		
+		// initialize class variables
+		vGrid = grid;
+		vRows = rows;
+		vColumns = columns;
+		numClust = 0;
+		
+		// loop through rows 
+		for(int r=0; r< rows; r++) {
+			
+			// loop through columns 
+			for(int c=0; c<columns;c++) {
+				
+				if(grid.get(r).get(c) > 0) {
+					// found a new cluster
+					numClust++;
+					
+					// call recursive function to identify all neighbors from this cluster
+					updateGridCluster_a(r, c);
+				}
+			}
+		}		
+		
+		// return number of clusters
+		return numClust;
+	}
+	
+	// recursive function to update cluster
+	private void updateGridCluster_a(int r, int c) {
+		
+		//System.out.println(String.valueOf(r) + "|" + String.valueOf(c) + "|" + String.valueOf(numClust));
+		
+		// update cell to -numClust
+		vGrid.get(r).set(c, -numClust);
+		
+		// test right cell
+		if (c<vColumns-1 && vGrid.get(r).get(c+1)>0) {
+			// found 1 at right cell
+			// call function with right cell
+			updateGridCluster_a(r, c+1);
+		}
+		
+		// test left cell
+		if (c>0 && vGrid.get(r).get(c-1)>0) {
+			// found 1 at left cell
+			// call function with left cell			
+			updateGridCluster_a(r, c-1);
+		}
+		
+		// test bottom cell
+		if (r<vRows-1 && vGrid.get(r+1).get(c)>0) {
+			// found 1 at bottom cell
+			// call function with bottom cell
+			updateGridCluster_a(r+1, c);
+		}
+		
+		// test up cell
+		if (r>0 && vGrid.get(r-1).get(c)>0) {
+			// found 1 at up cell
+			// call function with up cell
+			updateGridCluster_a(r-1, c);
+		}
+	}
+}
+	
+
