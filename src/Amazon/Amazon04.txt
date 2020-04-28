@@ -13,7 +13,7 @@ grid; an integer array representing the current status of its servers.
 
 Output:
 Return an integer representing the minimum number of hours required to send the file to all the available servers.
-Return -1 ia all the available servers cannot receive the file.
+Return -1 if all the available servers cannot receive the file.
 
 Note:
 Diagonally placed cells are not considered adjacent.
