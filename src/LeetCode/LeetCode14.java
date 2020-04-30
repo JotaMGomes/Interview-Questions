@@ -15,6 +15,7 @@ public class LeetCode14 {
 		System.out.println(vSolution.isValid("(]"));
 		System.out.println(vSolution.isValid("([)]"));
 		System.out.println(vSolution.isValid("{[]}"));
+		System.out.println(vSolution.isValid("}"));
 
 	}
 
@@ -35,13 +36,6 @@ class Solution14 {
     		
     		// push of pop elements to the stack
     		switch (s.charAt(i)) {
-    		// opens symbols, do push
-    		case '(':
-    		case '[':
-    		case '{':
-    			vStack.push(s.charAt(i));
-    			break;
-    			
     		// close symbols, do pop
     		case ')':
     			if (vStack.isEmpty() || vStack.pop() != '(')
@@ -57,6 +51,10 @@ class Solution14 {
     			if (vStack.isEmpty() || vStack.pop() != '{')
     				// stack is empty or type of brackets do not match
     				return false;
+    			break;
+    		// opens symbols, do push    			
+    		default:
+    			vStack.push(s.charAt(i));
     			break;
     		}
     	}

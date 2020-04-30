@@ -16,6 +16,8 @@ public class LeetCode08 {
 		System.out.println(vSolution.romanToInt("LVIII"));
 		System.out.println(vSolution.romanToInt("MCMXCIV"));
 		System.out.println(vSolution.romanToInt("y"));
+		System.out.println(vSolution.romanToInt("IM"));
+		System.out.println(vSolution.romanToInt("Iy"));
 
 	}
 
@@ -34,6 +36,8 @@ class Solution08 {
     	rate.put('D',500);
     	rate.put('M',1000);
     	
+    	String romanNumSequence = "IVXLCDM";
+    	
     	// define accumulator
     	int vReturn = 0;
     	
@@ -46,7 +50,7 @@ class Solution08 {
     		
     		// get next value
     		auxValue = rate.containsKey(s.charAt(i)) ? rate.get(s.charAt(i)) : 0;
-    		if (auxValue==0)
+    		if (auxValue==0 || (i<s.length()-1 && !rate.containsKey(s.charAt(i+1))))
     			// invalid Roman number
     			return 0;
     		
@@ -56,6 +60,12 @@ class Solution08 {
     			// if next value is less than current value,
     			//    subtract current value from last value
     			if (auxValue < rate.get(s.charAt(i+1))){
+    				
+    				if(romanNumSequence.indexOf(s.charAt(i+1)) - romanNumSequence.indexOf(s.charAt(i)) > 2 )
+    					// invalid Roman number
+    	    			// You can only subtract from the next two higher "digits." 
+    					return 0;
+    				
     				auxValue = rate.get(s.charAt(i+1)) - auxValue;
     				i++;
     			}
