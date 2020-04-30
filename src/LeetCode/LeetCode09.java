@@ -77,7 +77,7 @@ class Solution09b {
     	/*
     	   When a number is not a prime, this number can be factored into two factors namely a and b 
     	   i.e. number = a * b. 
-    	   If both a and b were greater than the square root of n, a*b would be greater than n.
+    	   If both a and b were greater than the square root of n, a * b would be greater than n.
     	 */
     	
     	

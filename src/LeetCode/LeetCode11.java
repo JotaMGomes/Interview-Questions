@@ -21,7 +21,7 @@ public class LeetCode11 {
 class Solution11 {
     public void rotate(int[] nums, int k) {
     	
-    	// garantee that k is between 0 and nums.length
+    	// guarantee that k is between 0 and nums.length
     	k = k % nums.length;
     	
     	// if k is zero than no rotation is needed
@@ -31,7 +31,7 @@ class Solution11 {
     	// create left array copy
     	int[] left = Arrays.copyOfRange(nums,nums.length-k, nums.length);
     	
-    	// create rigth array copy
+    	// create right array copy
     	int[] right = Arrays.copyOfRange(nums,0,nums.length-k);
     	
     	// update final array
