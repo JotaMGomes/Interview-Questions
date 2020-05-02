@@ -1,6 +1,7 @@
 # Interview-Questions
 My solutions for some interview questions.<br>
 Obs.: When more then one solution: My first attempt and after some research.
+Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 
 ## [LeetCode](https://leetcode.com/problemset/all/)
 
@@ -19,6 +20,7 @@ Obs.: When more then one solution: My first attempt and after some research.
 **13** [Valid-palindrome](src/LeetCode/LeetCode13.java)<br>
 **14** [Valid-parentheses](src/LeetCode/LeetCode14.java)<br>
 **15** [Best-time-to-buy-and-sell-stock](src/LeetCode/LeetCode15.java)<br>
+**16** [Arranging-Coins](src/LeetCode/LeetCode16.java)<br>
 
 
 ## [Careercup](https://www.careercup.com/page?pid=amazon-interview-questions&job=sde1-interview-questions&sort=votes)
@@ -28,6 +30,12 @@ Obs.: When more then one solution: My first attempt and after some research.
 
 ##[Codechef](https://www.codechef.com)
 **01** [Life, the Universe, and Everything](src/Codechef/Codechef01.java)<br>
+
+##[Codility](https://app.codility.com/programmers/)
+**01** [CodeDemo](src/Codility/Codility01.java)<br>
+**02** [BinaryGap](src/Codility/Codility02.java)<br>
+**03** [FrogJmp](src/Codility/Codility03.java)<br>
+**04** [TapeEquilibrium](src/Codility/Codility04.java)<br>
 
 
 ## [Others]
