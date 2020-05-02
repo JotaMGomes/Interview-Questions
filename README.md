@@ -1,6 +1,6 @@
 # Interview-Questions
 My solutions for some interview questions.<br>
-Obs.: When more then one solution: My first attempt and after some research.
+Obs.: When more then one solution: My first attempt and after some research.<br>
 Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 
 ## [LeetCode](https://leetcode.com/problemset/all/)
@@ -37,6 +37,9 @@ Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 **03** [FrogJmp](src/Codility/Codility03.java)<br>
 **04** [TapeEquilibrium](src/Codility/Codility04.java)<br>
 **05** [FrogRiverOne](src/Codility/Codility05.java)<br>
+**06** [maCounters](src/Codility/Codility06.java)<br>
+**07** [PermCheck](src/Codility/Codility07.java)<br>
+**08** [MaxProductOfThree](src/Codility/Codility08.java)<br>
 
 
 ## [Others]

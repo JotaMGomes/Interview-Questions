@@ -1,12 +1,7 @@
 package Codility;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-
 // https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
 // Jose Luiz Mattos Gomes
+import java.util.Arrays;
 
 public class Codility06 {
 
@@ -18,12 +13,6 @@ public class Codility06 {
 	int[] vA = new int[]{3,4,4,6,1,4,4};
 	System.out.println(Arrays.toString(vSolution.solution(5, vA)));
 	
-	System.out.println("=====");
-	
-	Solution06b vSolutionb = new Solution06b();
-	vA = new int[]{3,4,4,6,1,4,4};
-	System.out.println(Arrays.toString(vSolutionb.solution(5, vA)));
-	
 	}
 
 }
@@ -31,65 +20,52 @@ public class Codility06 {
 class Solution06 {
     public int[] solution(int N, int[] A) {
     	
-    	HashMap<Integer,Integer> vMap = new HashMap<Integer, Integer>();
-    	for(int i=1;i<=N;i++) {
-    		vMap.put(i, 0);
-    	}
+    	// define array to return
+    	int[] vResult = new int[N];
+    	
+    	// variable to keep max count
     	int maxCount = 0;
     	
+    	// variable to keep last updated value
+    	int lastUpdate = 0;
+    	
+    	// auxiliary variable to reduce arrays searches
+    	int vAux = 0;
+    	
+    	// interact through input array
     	for(int i=0;i<A.length;i++) {
+    		
+    		// if values is higher than N, update lastUpdate variable to current max count
     		if(A[i]>N) {
-    			for(int j=1;j<=N;j++) {
-    				vMap.replace(j, maxCount);
-				}
+    			lastUpdate = maxCount;
     		} else {
-    			vMap.replace(A[i], vMap.get(A[i])+1);
-    			if(vMap.get(A[i]) > maxCount) {
-    				maxCount = vMap.get(A[i]);
+    			// store current value from vResult as base value
+    			vAux = vResult[A[i]-1];
+    			
+    			// if value is less than lastUpdate, then lastUpdate is now the base value
+    			if (vAux < lastUpdate)
+    				vAux = lastUpdate;
+    			
+    			// increment value
+    			vAux++;
+    			
+    			// store value in result array
+    			vResult[A[i]-1] = vAux;
+    			
+    			// if value is higher then maxCount, update it
+    			if(vAux > maxCount) {
+    				maxCount = vAux;
     			}
     		}
     	}
     	
-    	int[] vResult = new int[N];
-    	for(int i=1;i<=N;i++) {
-    		vResult[i-1]=vMap.get(i);
-    	}
-    	return vResult;
-    }
-}
-
-class Solution06b {
-    public int[] solution(int N, int[] A) {
-    	//3,4,4,6,1,4,4
-    	HashSet<Integer> vHS = new HashSet<Integer>();
-    	int[] vResult = new int[N];
-
-    	int maxCount = 0;
-    	int lastUpdate = 0;
-    	
-    	for(int i=0;i<A.length;i++) {
-    		if(A[i]>N) {
-    			Iterator<Integer> it=vHS.iterator();
-    			while(it.hasNext()) {
-    				vResult[it.next()]=maxCount;
-				}
-    			vHS.clear();
-    			lastUpdate = maxCount;
-    		} else {
-    			if(vResult[A[i]-1]==0)
-    				vResult[A[i]-1] = lastUpdate;
-    			vResult[A[i]-1]=vResult[A[i]-1]+1;
-    			vHS.add(A[i]-1);
-    			if (vResult[A[i]-1] > maxCount)
-    				maxCount = vResult[A[i]-1];
-    		}
-    	}
-    	
+    	// update result array
     	for(int i=0;i<N;i++) {
-    		if (vResult[i]==0)
+    		if (vResult[i] < lastUpdate)
     			vResult[i] = lastUpdate;
     	}
     	
+    	// return result array
     	return vResult;
     }
 }

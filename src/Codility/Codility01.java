@@ -90,10 +90,10 @@ class Solution01b {
     public int solution(int[] A) {
         // write your code in Java SE 8
     	
-    	// store size of the array
-        HashSet<Integer> vSet = new HashSet<Integer>(); 
+    	// define hashSet
+    	HashSet<Integer> vSet = new HashSet<Integer>(); 
         
-        // find position where number >= 0
+        // insert all values on hashSet
         for(int n : A) {
         	vSet.add(n);
         }
