@@ -36,6 +36,7 @@ Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 **02** [BinaryGap](src/Codility/Codility02.java)<br>
 **03** [FrogJmp](src/Codility/Codility03.java)<br>
 **04** [TapeEquilibrium](src/Codility/Codility04.java)<br>
+**05** [FrogRiverOne](src/Codility/Codility05.java)<br>
 
 
 ## [Others]
