@@ -17,6 +17,9 @@ public class Test03 {
 		
 		vA = new int[]{1, 3, 1, 2};
 		System.out.println(vSolution.solution(vA));
+		
+		vA = new int[]{4, 4, 4, 5, 3};
+		System.out.println(vSolution.solution(vA));
 
 	}
 
@@ -26,15 +29,21 @@ public class Test03 {
 class SolutionT3 {
     public int solution(int[] A) {
     	
+    	// declare int variable to store result
     	int vReturn = 0;
+    	
+    	// define HashSet to store possible trees to remove
     	HashSet<Integer> treesToRemove = new HashSet<Integer>();
     	
     	// loop through array
     	int i=0;
     	while (i<A.length-2) {
     		
+    		// the main idea is to compare trees 3 by 3
     		if (!test3(A, i, i+1, i+2)) {
     			// found an error
+    			
+    			// store the 3 possible trees that can be removed
     			treesToRemove.add(i);
     			treesToRemove.add(i+1);
     			treesToRemove.add(i+2);
@@ -55,9 +64,13 @@ class SolutionT3 {
     	Iterator<Integer> it = treesToRemove.iterator();
         while(it.hasNext()){
         	
+        	// find pointer of the tree to test
         	i = it.next();
     		
+        	// flag boolean to true
     		boolean canRemove = true;
+    		
+    		// test if can remove the thee
     		if(i-3>=0)
     			canRemove = canRemove && test3(A, i-3, i-2, i-1);
     		
@@ -70,19 +83,33 @@ class SolutionT3 {
     		if(i+3<A.length)
     			canRemove = canRemove && test3(A, i+1, i+2, i+3);	
     		
+    		// if OK, than add as possible tree to be removed
     		if (canRemove)
     			vReturn++;
     	}
     
-    	return vReturn;
+        // return the number of trees to remove, or -1 it it has no possible solution.
+    	return (vReturn > 0 ? vReturn : -1);
     }
     
+    /**
+     * Test if sequence of 3 trees is aesthetically pleasing
+     * @param A   : Vector with tree sizes
+     * @param i1  : index of tree 1  X..
+     * @param i2  : index of tree 2  .X.
+     * @param i3  : index of tree 3  ..X
+     * @return    : true if aesthetically pleasing
+     */
     private boolean test3 (int[] A, int i1, int i2, int i3) {
 
+    	// return if sequence of 3 trees is aesthetically pleasing
     	return ((A[i1]>A[i2] && A[i2]<A[i3]) || (A[i1]<A[i2] && A[i2]>A[i3]));
     }
 }
 
+
+//  my first wrong approach
+//
 //class SolutionT3 {
 //    public int solution(int[] A) {
 //        // write your code in Java SE 8
