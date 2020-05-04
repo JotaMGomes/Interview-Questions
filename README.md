@@ -41,7 +41,9 @@ Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 **07** [PermCheck](src/Codility/Codility07.java)<br>
 **08** [MaxProductOfThree](src/Codility/Codility08.java)<br>
 **09** [MinAvgTwoSlice](src/Codility/Codility09.java)<br>
-**10** [Test1](src/Codility/Test01.java)<br>
+**10** [Test01](src/Codility/Test01.java)<br>
+**11** [Test02](src/Codility/Test02.java)<br>
+**12** [Test03](src/Codility/Test03.java)<br>
 
 
 ## [Others]
