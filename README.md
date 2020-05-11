@@ -50,6 +50,7 @@ Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 ##[HackerHank](https://www.hackerrank.com)
 **01** [2D Array - DS](src/HackerRank/HackerRank01.java)<br>
 **02** [Left Rotation](src/HackerRank/HackerRank02.java)<br>
+**03** [Java 1D Array (Part2)](src/HackerRank/HackerRank03.java)<br>
 
 
 ## [Others]
