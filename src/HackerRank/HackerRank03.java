@@ -9,8 +9,9 @@ public class HackerRank03 {
 
 	public static void main(String[] args) {
 		Solution03 vSolution = new Solution03();
+		int[] game;
 		
-		int[] game = new int[]{0,0,0,0,0};
+	    game = new int[]{0,0,0,0,0};
 		System.out.println(vSolution.canWin(3, game) ? "YES" : "NO");
 		System.out.println("=====");
 		
@@ -25,6 +26,10 @@ public class HackerRank03 {
 		game = new int[]{0,1,0};
 		System.out.println(vSolution.canWin(1, game) ? "YES" : "NO");
 		System.out.println("=====");
+		
+		
+		game = new int[]{0,0};System.out.println(vSolution.canWin(0, game) ? "YES" : "NO");
+
 
 	}
 
@@ -52,12 +57,12 @@ class Solution03 {
 		if(vGame[pos]==1)
 			return false;
 		
-		if(pos+vLeap >= vGame.length) {
+		if(vLeap>0 && pos+vLeap >= vGame.length) {
 			vEnd = true;
 			return true;
 		}
 		
-		if(vGame[pos+vLeap]==0)
+		if(vLeap>0 && vGame[pos+vLeap]==0)
 			vReturn = canMove(pos+vLeap);
 		else
 			vReturn = false;
@@ -65,8 +70,10 @@ class Solution03 {
 		if (!vReturn) 
 			if(pos+1 < vGame.length) 
 				vReturn = canMove(pos+1);
-			else 
-				vReturn = false;
+			else {
+				vEnd = true;
+				return true;
+			}
 		
 		
 		if (!vReturn)
@@ -85,6 +92,9 @@ class Solution03 {
 		vGame = game;
 		vLeap = leap;
 		vEnd = false;
+		
+		if(game.length==1)
+			return true;
 		
     	return canMove(0);
     }
