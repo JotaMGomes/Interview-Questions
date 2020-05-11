@@ -15,7 +15,7 @@ Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 **08** [Roman-to-integer](src/LeetCode/LeetCode08.java)<br>
 **09** [Count-primes](src/LeetCode/LeetCode09.java)<br>
 **10** [MySqrt](src/LeetCode/LeetCode10.java)<br>
-**11** [Rotate-array](src/LeetCode/LeetCode11.java)<br>
+**11** [Rotate-array-Right](src/LeetCode/LeetCode11.java)<br>
 **12** [Implement-strstr](src/LeetCode/LeetCode12.java)<br>
 **13** [Valid-palindrome](src/LeetCode/LeetCode13.java)<br>
 **14** [Valid-parentheses](src/LeetCode/LeetCode14.java)<br>
@@ -31,6 +31,7 @@ Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 ##[Codechef](https://www.codechef.com)
 **01** [Life, the Universe, and Everything](src/Codechef/Codechef01.java)<br>
 
+
 ##[Codility](https://app.codility.com/programmers/)
 **01** [CodeDemo](src/Codility/Codility01.java)<br>
 **02** [BinaryGap](src/Codility/Codility02.java)<br>
@@ -44,6 +45,11 @@ Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 **10** [Test01](src/Codility/Test01.java)<br>
 **11** [Test02](src/Codility/Test02.java)<br>
 **12** [Test03](src/Codility/Test03.java)<br>
+
+
+##[HackerHank](https://www.hackerrank.com)
+**01** [2D Array - DS](src/HackerRank/HackerRank01.java)<br>
+**02** [Left Rotation](src/HackerRank/HackerRank02.java)<br>
 
 
 ## [Others]
