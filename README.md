@@ -28,11 +28,11 @@ Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 **02** [Volume-distribution](src/Careercup/Careercup02.java)<br>
 
 
-##[Codechef](https://www.codechef.com)
+## [Codechef](https://www.codechef.com)
 **01** [Life, the Universe, and Everything](src/Codechef/Codechef01.java)<br>
 
 
-##[Codility](https://app.codility.com/programmers/)
+## [Codility](https://app.codility.com/programmers/)
 **01** [CodeDemo](src/Codility/Codility01.java)<br>
 **02** [BinaryGap](src/Codility/Codility02.java)<br>
 **03** [FrogJmp](src/Codility/Codility03.java)<br>
@@ -47,7 +47,7 @@ Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 **12** [Test03](src/Codility/Test03.java)<br>
 
 
-##[HackerHank](https://www.hackerrank.com)
+## [HackerHank](https://www.hackerrank.com)
 **01** [2D Array - DS](src/HackerRank/HackerRank01.java)<br>
 **02** [Left Rotation](src/HackerRank/HackerRank02.java)<br>
 **03** [Java 1D Array (Part2)](src/HackerRank/HackerRank03.java)<br>
