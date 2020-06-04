@@ -4,7 +4,6 @@ Obs.: When more then one solution: My first attempt and after some research.<br>
 Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 
 ## [LeetCode](https://leetcode.com/problemset/all/)
-
 **01** [Two Sum](src/LeetCode/LeetCode01.java)<br>
 **02** [Reverse-string](src/LeetCode/LeetCode02.java)<br>
 **03** [Single-number](src/LeetCode/LeetCode03.java)<br>
