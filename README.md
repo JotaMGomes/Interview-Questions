@@ -1,5 +1,5 @@
-# JAVA Interview-Questions
-My solutions for some interview questions.<br>
+# JAVA Problems-Solutions
+My solution for some problems from LeetCode, Careercup, HackerHank, and Codility.<br>
 Obs.: When more then one solution: My first attempt and after some research.<br>
 Reminder: Integer.MAX_VALUE = 2^31-1 = 2,147,483,647
 
